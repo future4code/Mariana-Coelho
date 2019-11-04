@@ -1,0 +1,59 @@
+
+/*
+
+1. 55
+
+2.
+a. O que o comando `.push` faz?
+adiciona mais um valor no último index do array (no final)
+
+b. Qual o valor impresso no console?
+[10,15,20,25,30]
+
+c. Qual **seria** imprimido no console se a variável `numero` tivesse o valor de `3`? E se tivesse o valor de `4`?/*
+[ 12, 15, 18, 27, 30 ] e [ 12, 20 ] (sãos os números divisíveis por 3 e 4 com resto zero)
+
+EXERCÍCIO 4 
+
+a. 
+
+const numeros = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+
+let maior = numeros[0]
+let menor = numeros[0]
+
+for (let i = 0; i < numeros.length; i++) {
+	const elemento = numeros[i]
+	if (elemento > maior) {
+		maior = elemento
+	}
+}
+console.log('O menor número é ' + maior)
+
+for (let i = 0; i < numeros.length; i++) {
+	const elemento = numeros[i]
+	if (elemento < menor) {
+		menor = elemento
+	}
+}
+console.log('O menor número é ' + menor)
+
+
+b. const numeros = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+
+for (i = 0; i < numeros.length; i++) {
+	let segundoArray = numeros[i] / 10
+	console.log(segundoArray)
+}
+
+c. 
+const numeros = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]
+
+for (i = 0; i < numeros.length; i++) {
+ if (numeros[i] % 2 === 1)
+	console.log(numeros[i])
+}
+
+d. for (i = 0; i < numeros.length; i++) {
+	console.log('O elemento do index ' + [i] + ' é ' + numeros[i])
+}
