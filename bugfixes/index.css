@@ -152,3 +152,8 @@ td button:hover {
 #back-button:focus {
     color:white;
 }
+
+#estilo-input {
+    border: none;
+    border-bottom: 2px solid black;
+}
