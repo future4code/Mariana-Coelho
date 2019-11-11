@@ -1,0 +1,102 @@
+/* HOME */
+
+body {
+    background: #1D1E2C;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#menu {
+    color:white;
+    background-color: #0e0e15;
+    padding: 20px;
+}
+
+#descricao {
+    color: #f7ebec;
+    padding: 15px;
+}
+
+#descricao > p {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+}
+
+#instituicoes {
+    background: #ac9fbb;
+    padding: 50px;
+}
+
+#habilidades {
+    background-color: #ac9fbb;
+    padding: 50px;
+    font-size: 15px;
+}
+
+#trabalhos {
+    background: #ddbdd5;
+    padding: 50px;
+}
+
+#contato {
+    background-color: #f7ebec;
+    padding: 50px;
+}
+
+.itens-menu {
+    color: #59656f;
+    margin: 30px;
+    font-size: 14px;
+}
+.botao-enviar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-contato {
+    font-size: 14px;
+}
+
+.img-trabalhos {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 350px;
+    height: 250px;
+}
+
+/* ESTILOS DOS LINKS */
+
+a:link {
+    color: grey;
+    text-decoration: none;
+    cursor: crosshair;
+  }
+  
+a:visited {
+    color: grey;;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  a:active {
+    color: grey;
+  }
+
+
+/*Estilos paginas de projetos */
+
+#pagina-projetos {
+    background-color: #ac9fbb;
+    margin: 20px;
+    padding: 20px;
+}
+.p-projeto {
+    color: white; 
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+}
