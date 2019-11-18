@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="estiloplanner.css" media="screen" />
+    <title>Planner semanal</title>
+</head>
+<body>
+    <div id="header-tarefa">
+        <label for="nova-task">Nova Tarefa:</label>
+        <input type="text" name="novaTarefa" id="novaTarefa">
+
+        <select name="diasSemana" id="diasSemana">
+                <option value="segunda">Segunda-Feira</option>
+                <option value="terca">Terça-Feira</option>
+                <option value="quarta">Quarta-Feira</option>
+                <option value="quinta">Quinta-Feira</option>
+                <option value="sexta">Sexta-Feira</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+        </select>
+        <button id="botao" value="" onclick="novaTarefa()">Criar nova tarefa!</button>
+    </div>
+
+    <div id="flexDias">
+        <div id="segunda">
+            Segunda
+          </div>
+        <div id="terca">
+            Terça
+        </div>
+        <div id="quarta">
+            Quarta
+        </div>
+        <div id="quinta">
+            Quinta
+        </div>
+        <div id="sexta">
+            Sexta
+        </div>
+        <div id="sabado">
+            Sábado
+        </div>
+        <div id="domingo">
+            Domingo
+        </div>
+    </div>
+    
+</body>
+</html>
