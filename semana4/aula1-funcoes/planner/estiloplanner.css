@@ -1,0 +1,31 @@
+body { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header-tarefa {
+    display: flex; 
+    justify-content: center;
+    padding: 10px;
+}
+
+#header-tarefa > * {
+    margin: 5px;
+}
+
+#flexDias {
+    display: flex;
+    margin: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#flexDias > div {
+    border: 2px dotted pink;
+    text-align: center;
+    min-height: 50px;
+    margin: 5px;
+    padding: 10px;
+    height: 30vh;
+    min-width: 300px;
+    font-size: 20px;
+}
