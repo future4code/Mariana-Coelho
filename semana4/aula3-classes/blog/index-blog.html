@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="estilo-blog.css" media="screen" />
+    <script type="text/javascript" src="script-blog.js"></script>
     <title>- Blog -</title>
 </head>
 <body>
@@ -15,20 +16,20 @@
     <main>
         <h2>Criar post</h2>
         
-        <container class="postagem">
+        <container id="postagem">
             <div>
                 <p>Título</p>
-                    <input type="text"> 
+                    <input id="titulo" type="text"> 
 
 
                 <p>Autor</p>
-                <input type="text"> 
+                <input id="autor" type="text"> 
             
 
                 <p>Texto</p>
-                <textarea></textarea>    
+                <textarea id="conteudo"></textarea>    
                 
-                <p><button>Criar</button></p>
+                <p><button onclick="aoClicar()">Criar</button></p>
 
             </div> 
 
