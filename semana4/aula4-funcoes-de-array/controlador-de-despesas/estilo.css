@@ -27,3 +27,10 @@ main {
 #botoes {
     margin: 10px 0;
 }
+
+
+.nova-despesa {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}

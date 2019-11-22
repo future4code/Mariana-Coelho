@@ -16,10 +16,10 @@
             <h3>Cadastrar despesa</h3>
             
             <label>Valor</label>
-            <input type="text">
+            <input type="text" id="valor">
             
             <label><p>Tipo</p></label>
-            <select name="select">
+            <select id="select-de-tipos" name="select">
                     <option value="casa">Casa</option> 
                     <option value="viagem">Viagem</option>
                     <option value="roles">Rolês</option>
@@ -27,7 +27,11 @@
             </select>
             
             <label><p>Descrição:</p></label>
-            <textarea></textarea>
+            <textarea id="descricao-despesa"></textarea>
+
+            <div>
+                <button onclick="aoClicarEmCadastrar()">Cadastrar despesa</button>
+            </div>
 
         </div>
 
@@ -51,6 +55,10 @@
                 <div id="botoes">
                     <button>Filtrar</button>
                     <button>Limpar filtros</button>
+                </div>
+
+                <div id="area-despesas">
+                    
                 </div>
         
             </div>
