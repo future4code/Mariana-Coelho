@@ -1,0 +1,25 @@
+.Bigcard {
+    padding: 20px;
+    border: 1px solid black;
+    width: 600px;
+    height: 200px;
+    margin: 5px;
+}
+
+.ImagemRedonda {
+    width: 80px;
+}
+.Grid-img-descricao {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+    padding: 10px;
+}
+
+.Grid-img-descricao > p {
+    margin: 10px;
+}
+
+.Imagem {
+    text-align: center;
+}
