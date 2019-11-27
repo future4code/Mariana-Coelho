@@ -1,0 +1,40 @@
+
+.Main-Container {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    margin-left:40%;
+    margin-top: 2%;
+    margin-right: 40%;
+    margin-bottom: 2%;
+}
+
+.titulo {
+    margin-top:5px; 
+    margin-bottom:5px;
+}
+
+p {
+    text-align: left;
+    margin: 10px 0px 0px 30px;
+}
+
+#icones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.imagemdopost {
+    width: 300px;
+    height:220px;
+}
+
+.hearticon {
+    width: 24px;
+    margin-left:-10px;
+}
+
+.commenticon {
+    width: 25px;
+    margin-left: 70px;
+}
