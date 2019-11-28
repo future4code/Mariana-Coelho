@@ -1,0 +1,36 @@
+main {
+    display: flex;
+}
+
+
+#controlador-despesas {
+    border: 1px solid blueviolet;
+    padding: 8px;
+    margin: 2px;
+    width: 300px; 
+}
+
+#despesas-detalhadas {
+    border: 1px solid blueviolet;
+    padding: 8px;
+    margin: 2px;
+    width: 300px; 
+}
+
+#extrato {
+    border: 1px solid blueviolet;
+    padding: 8px;
+    margin: 2px;
+    width: 300px; 
+}
+
+#botoes {
+    margin: 10px 0;
+}
+
+
+.nova-despesa {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
