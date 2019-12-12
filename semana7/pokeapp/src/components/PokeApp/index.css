@@ -1,0 +1,28 @@
+body {
+    background-color: #D5E7E2;
+}
+
+.SelectorContainer {
+    padding: 100px;
+}
+
+.PokemonSelector {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+} 
+
+.PokemonDivs {
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    align-content: space-between;
+
+}
+
+.PokemonDivsItem {
+    margin: 10px 10px 10px 10px;
+}
