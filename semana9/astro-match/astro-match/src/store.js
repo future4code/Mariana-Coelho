@@ -11,10 +11,3 @@ const store = createStore(
 )
 
 export default store;
-
-
-const getPosts = () => async (dispatch, getState) => {
-	const response = await axios.get("https://api");
-
-	dispatch(setPosts(response.data.posts)) 
-}
