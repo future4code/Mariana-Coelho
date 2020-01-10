@@ -1,6 +1,9 @@
 const initialState = {
-  currentPage: "SwipeScreen",
+  currentPage: "SwipeScreen", //estado inicial é a página de swipes
 };
+
+
+//Reducer com ação para mudar a página atual
 
 export default (state = initialState, action) => {
 

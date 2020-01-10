@@ -5,6 +5,8 @@ import SwipeScreen from '../SwipeScreen'
 import MatchScreen from '../MatchScreen'
 import ProfileScreen from '../ProfileScreen'
 
+//Switch case 
+
 const Router = (props) => {
   switch(props.currentPage) {
     case "SwipeScreen":
