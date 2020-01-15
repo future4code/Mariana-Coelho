@@ -10,12 +10,10 @@ import Inscricao from "../Inscricao";
 
 export const routes = {
   root: "/",
-  criarviagem: "trips/create",
-  listarviagem: "trips/list",
-  admininscricoes: "trips/adminscricao",
-  inscricao: "form-inscricao"
-
-  // Outras rotas aqui
+  criarviagem: "/trips/create",
+  listarviagem: "/trips/list",
+  admininscricoes: "/trips/adminscricao",
+  inscricao: "/form-inscricao"
 }
 
 function Router(props) {

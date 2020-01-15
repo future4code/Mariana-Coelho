@@ -34,7 +34,7 @@ class LoginPage extends Component {
 
     return (
       <LoginWrapper>
-        <Button variant="outlined">Inscreva-se em uma de nossas viagens!</Button> 
+        <Button variant="outlined" onClick={this.props.vaiParaFormularioInscricao}>Inscreva-se em uma de nossas viagens!</Button> 
         <TextField
           onChange={this.handleFieldChange}
           name="email"
@@ -56,7 +56,8 @@ class LoginPage extends Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  vaiParaListarViagens: () => dispatch(push("/trips/list"))
+  vaiParaListarViagens: () => dispatch(push("/trips/list")),
+  vaiParaFormularioInscricao: () => dispatch(push("/form-inscricao"))
 });
 
 export default connect(
