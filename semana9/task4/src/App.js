@@ -2,100 +2,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styled from 'styled-components';
 import './App.css';
-
-//Actions:
-
-//Nova Tarefa
-function insertNewTask(task) {
-	return {
-		type: 'INSERT_NEWTASK',
-		payload: {
-			task: task
-	  }
-  }
-}
-
-
-//Marcar tarefa como completa
-function markAsComplete() {
-  return {
-    type: 'MARK_ASCOMPLETE',
-    payload: {
-    }
-  }
-
-}
-
-//Marcar todas como completas
-function markAllAsComplete() {
-  return {
-    type: 'MARK_ALLASCOMPLETE',
-    payload: {
-    }
-  }
-}
-
-
-//Deletar uma tarefa pelo botão x
-function deleteOneTask() {
-  return {
-    type: 'DELETE_ONETASK',
-    payload: {
-    }
-  }
-}
-
-
-//Deletar todas as tarefas da lista
-function deleteAllCompletedTasks() {
-  return {
-    type: 'DELETE_ALLCOMPLETEDTASKS',
-    payload: {
-    }
-  }
-}
-
-
-//Filtrar mostrando todas
-function filterByAll() {
-  return {
-    type: 'FILTER_BYALL',
-    payload: {
-    }
-  }
-}
-
-
-//Filtrar mostrando as tarefas pendentes
-function filterByPending() {
-  return {
-    type: 'FILTER_BYPENDING',
-    payload: {
-    }
-  }
-}
-
-
-//Filtrar mostrando as tarefas completas
-function filterByCompleted() {
-  return {
-    type: 'FILTER_BYCOMPLETED',
-    payload: {
-    }
-  }
-}
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Input from '@material-ui/core/Input';
+import store from './App';
 
 function App() {
  return (
+   
+    
     <div>
       <h1>4Task</h1>
-      <div>Lista de tasks</div>
-      <input placeholder="O que tem que ser feito?"></input>
+      <Input placeholder="O que deve ser feito?"/>
       <footer>
-        <button>Todas</button>
-        <button>Pendentes</button>
-        <button>Completas</button>
-        <button>Remover completas</button>
+        <Button variant="outlined" color="primary">Marcar todas como completas</Button>
+         <Button variant="outlined" color="primary" /*onClick={}*/>Todas</Button>
+         <Button variant="outlined" color="primary">Pendentes</Button>
+         <Button variant="outlined" color="primary">Completas</Button>
       </footer>
     </div>
   )
