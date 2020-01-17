@@ -11,7 +11,7 @@ import Inscricao from "../Inscricao";
 export const routes = {
   root: "/",
   criarviagem: "/trips/create",
-  listarviagem: "/trips/list",
+  listarviagens: "/trips/list",
   admininscricoes: "/trips/adminscricao",
   inscricao: "/form-inscricao"
 }
