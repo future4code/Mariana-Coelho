@@ -10,6 +10,7 @@ const TaskDiv = styled.div`
     margin: 5px;
     max-width: 300px;
     padding: 5px;
+    align-items: center;
 `
 
 
@@ -25,18 +26,14 @@ class TaskList extends React.Component{
 
     render(){
         return(
-            <div>
-                <List bordered>
+                <div>
                     {this.props.tasks && this.props.tasks.map((task)=>
-                        <List.Item>
                             <TaskDiv>
                                 <h3>{task.day}</h3>
-                                <p>{task.text}</p>
+                                <li>{task.text}</li>
                             </TaskDiv>
-                        </List.Item>
                      )}
-                </List>
-            </div>
+                </div>
         )
     }
 }
