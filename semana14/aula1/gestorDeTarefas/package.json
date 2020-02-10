@@ -1,0 +1,17 @@
+{
+  "name": "gestordetarefas",
+  "version": "1.0.0",
+  "description": "adiciona uma tarefa",
+  "main": "gestorDeTarefas.js",
+  "scripts": {
+    "start": "node gestorDeTarefas.js"
+  },
+  
+  "keywords": [
+    "tarefas",
+    "lista",
+    "adicionar"
+  ],
+  "author": "Mariana Coelho",
+  "license": "ISC"
+}
