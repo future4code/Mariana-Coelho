@@ -1,0 +1,17 @@
+{
+  "name": "operacoesnumericas",
+  "version": "1.0.0",
+  "description": "executa operações numericas",
+  "main": "operações.js",
+  "scripts": {
+    "start": "node operações.js"
+  },
+  "keywords": [
+    "operacoes",
+    "numericas",
+    "numeros"
+  ],
+  "author": "Mariana Coelho",
+  "license": "ISC"
+}
+ 
