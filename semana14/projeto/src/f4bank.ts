@@ -18,7 +18,7 @@ type expense = {
 };
 
 new Promise((resolve, reject) => {
-    readFile('./contas.json', callback)
+    readFile('./accountsData.json', callback)
     function callback(err: Error, data: Buffer) {
         if(err) {
             reject(err)
