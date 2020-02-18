@@ -21,8 +21,3 @@ export class Dessert extends Dish {
     console.log("Baking Dessert");
   }
 }
-
-const brigadeiro = new Dessert(100, 20, ["leite condensado"], 100, 10);
-//console.log(brigadeiro.getSlicePrice()); preço por pedaço
-
-const pudim = new Dessert(7, 2, ['ovo','leite condensado','leite'], 50, 8)

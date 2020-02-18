@@ -14,6 +14,3 @@ export class SaltyDish extends Dish {
     console.log("Starting Salty Dish")
   }
 }
-
-const feijoada = new SaltyDish(100, 20, ["leite condensado"], 100);
-const acaraje = new SaltyDish(12, 5, ['caruru','vatapa','camarao'], 60)

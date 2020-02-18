@@ -20,5 +20,10 @@ export abstract class Dish {
     return this.price - this.cost;
   }
 
+
+  public getPrice(): number {
+    return this.price;
+  }
+
   public abstract cook(): void;
 }
