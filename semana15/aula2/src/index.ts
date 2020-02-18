@@ -2,13 +2,13 @@ import { SaltyDish } from './saltyDish'
 import { Dessert } from './dessert'
 import { Dish } from './dish'
 
-const carbonara = new SaltyDish(50, 10, ['macarrao'], 20)
-const acaraje = new SaltyDish(20, 10, ['camarao', 'quiabo', 'vatapa'], 50)
-const brigadeiro = new Dessert(5, 1, ['chocolate', 'leite condensado'], 30, 10)
-const pudim = new Dessert(7, 2, ['ovo','leite condensado','leite'], 50, 8)
+const carbonara = new SaltyDish('carbonara',50, 10, ['macarrao'], 20)
+const acaraje = new SaltyDish('acaraje', 20, 10, ['camarao', 'quiabo', 'vatapa'], 50)
+const brigadeiro = new Dessert('brigadeiro',5, 1, ['chocolate', 'leite condensado'], 30, 10)
+const pudim = new Dessert('pudim',7, 2, ['ovo','leite condensado','leite'], 50, 8)
 
 
-const dishes: Dish[] = [
+let dishes: Dish[] = [
     carbonara, 
     acaraje, 
     brigadeiro, 
@@ -42,10 +42,24 @@ const caixa = new Cashier('Astrodev', 500)
 console.log(caixa)
 console.log("quantidade de funcionarios", Employee.totalOfEmployees)
 
-//class Manager extends Cashier {
+class Manager extends Cashier {
+    public sayJob(): string {
+        return "Eu sou um gerente"
+    }
+}
 
-//}
+class Chef extends Employee {
+    public sayJob(): string {
+        return "Você é a vergonha da prrofission"
+    }
 
-//class Chef extends Employee {
+    removeDishFromMenu(dishes: Dish[], dishToRemove: string): Dish[] {
+        return dishes.filter(dish => dish.name !== dishToRemove)
+    }
 
-//}
+}
+
+const jacquin = new Chef("Jacquin", 20.000)
+dishes = jacquin.removeDishFromMenu(dishes, 'brigadeiro')
+
+console.log(dishes)
