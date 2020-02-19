@@ -1,17 +1,19 @@
 import { Industry } from './industry';
-import { Place } from './place';
+import { Client } from './client';
 
 
-export class IndustrialClient extends Industry implements Place {
+export class IndustrialClient extends Industry implements Client {
 
     constructor(
-        name: string,
-        cnpj: string,
+        public clientName: string,
+        public clientNumber: number,
+        public consumedEnergy: number,
+        industryName: string,
+        industryNumber: string,
         cep: string,
-        public industryName: string,
-        public industryNumber: string
+
     ) {
-        super(name,cnpj,cep)
+        super(industryName, industryNumber, cep)
     }
     calculateBill(): number {
         return 0
