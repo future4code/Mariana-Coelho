@@ -1,0 +1,11 @@
+A ''Client'' é uma interface 
+
+Place é uma classe abstrata com o parametro cep
+
+No arquivo commerce, temos um import da classe abstrata Place.
+
+A classe Commerce vai ser filha da classe Place, que herda o cep da Place, por isso chama o super(cep), pra pegar o cep da Place.
+
+Industry também é filha da Place, herda o cep pelo super e define também industryName e industryNumber.
+
+Residence é filha da Place, herda o cep, define name e cpf.
