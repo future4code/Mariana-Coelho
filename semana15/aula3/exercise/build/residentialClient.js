@@ -13,4 +13,4 @@ class ResidentialClient extends residence_1.Residence {
     }
 }
 exports.ResidentialClient = ResidentialClient;
-//# sourceMappingURL=residentialClient.js.map
+//# sourceMappingURL=ResidentialClient.js.map
