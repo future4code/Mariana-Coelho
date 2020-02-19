@@ -1,5 +1,5 @@
-import { Residence } from '../residence';
-import { Client } from '../client';
+import { Residence } from './residence';
+import { Client } from './client';
 
 
 export class ResidentialClient extends Residence implements Client {
