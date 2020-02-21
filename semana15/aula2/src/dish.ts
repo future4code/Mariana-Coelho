@@ -30,3 +30,4 @@ export abstract class Dish {
 
   public abstract cook(): void;
 }
+

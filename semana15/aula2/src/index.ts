@@ -59,7 +59,7 @@ class Chef extends Employee {
 
 }
 
-const jacquin = new Chef("Jacquin", 20.000)
+const jacquin = new Chef("Jacquin", 20000)
 dishes = jacquin.removeDishFromMenu(dishes, 'brigadeiro')
 
-console.log(dishes)
+console.log(dishes) 
