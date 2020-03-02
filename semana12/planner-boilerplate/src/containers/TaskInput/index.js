@@ -33,12 +33,12 @@ class TaskInput extends React.Component {
 
     render(){
         return(
-            <Panel bordered>
+            <div>
                 <form onSubmit={this.handleInputTask} onChange={this.handleInputChange}>
-                    <Input  value={this.state.form.text} type="text" name="text" size="lg" placeholder="Digite uma tarefa" />
-                    <ButtonToolbar>
+                    <Input  value={this.state.form.text} type="text" name="text" size="lg" placeholder="Insira uma nova tarefa" />
+                    <div>
                         <select  name="day" value={this.state.form.day} onChange={this.handleInputChange}>
-                            <option value="" selected="selected">Selecione o dia</option>
+                            <option value="" selected="selected">Dia da semana</option>
                             <option value="Segunda">Segunda</option>
                             <option value="Terça">Terça</option> 
                             <option value="Quarta">Quarta</option> 
@@ -48,9 +48,9 @@ class TaskInput extends React.Component {
                             <option value="Domingo">Domingo</option> 
                         </select>
                         <Button appearance="primary" onClick={this.createTask}>Salvar</Button>
-                    </ButtonToolbar>
+                    </div>
                 </form>
-            </Panel>
+            </div>
         )
     }
 }
