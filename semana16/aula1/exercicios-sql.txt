@@ -1,0 +1,96 @@
+USE exercicios;
+
+DESCRIBE actors;
+
+USE `bouman-mariana`;
+
+CREATE TABLE actors(
+actor_id int PRIMARY KEY,
+first_name varchar(45),
+last_name varchar(45)
+);
+
+USE `exercicios`;
+
+DESCRIBE films;
+
+USE `bouman-mariana`
+
+CREATE TABLE films (
+    film_id int PRIMARY KEY, 
+    title varchar(128) NOT NULL, 
+    description varchar(255) ,
+    release_year year(4),
+    length int,
+    rating enum('G','PG','PG-13','R','NC-17'),
+    special_features set('Trailers','Commentaries','Deleted Scenes','Behind the Scenes')
+);
+
+USE exercicios;
+
+DESCRIBE films;
+
+SELECT * FROM films;
+
+SELECT title, description 
+FROM films
+WHERE length > 120;
+
+SELECT release_year, description, rating  
+FROM films
+WHERE description LIKE '%Documentary%';
+
+
+SELECT release_year, title, special_features  
+FROM films
+WHERE rating = 'R'
+AND title LIKE 'a%';
+
+SELECT * 
+FROM films
+WHERE special_features LIKE '%Trailers%'
+AND rating = 'PG-13'
+AND title LIKE '%d%';
+
+
+INSERT films VALUES (
+    1, 
+    "Batman - Dark Knight", 
+    "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice." ,
+    2008,
+    152,
+    'PG-13',
+    'Behind the Scenes'
+),(
+    2, 
+    "Inception", 
+    NULL ,
+    2010,
+    148,
+    'PG-13',
+    'Behind the Scenes'
+),(
+    3, 
+    "Lord of the rings", 
+    NULL ,
+    2003,
+   201,
+    'PG-13',
+    'Trailers'
+),(
+    4, 
+    "Interestelar", 
+    NULL ,
+    2014,
+    169,
+    'NC-17',
+    'Behind the Scenes'
+),(
+    5, 
+    "La La Land", 
+    NULL ,
+    2016,
+    128,
+    'PG-13',
+    'Deleted Scenes'
+);
