@@ -1,0 +1,83 @@
+Exercício 1:
+
+1.
+SELECT * from city
+ORDER BY population DESC
+LIMIT 5
+;
+
+
+2. 
+SELECT avg(population), district
+FROM city
+GROUP BY district;
+
+
+3. 
+SELECT COUNT(*) from city
+GROUP BY district;
+
+
+4. 
+SELECT COUNT(Name) AS QtdeCidades, countryCode 
+FROM city
+GROUP BY countryCode
+ORDER BY QtdeCidades DESC
+LIMIT 10
+;
+
+
+
+Exercício 2:
+
+USE exercicios;
+DESCRIBE country;
+
+SELECT Name, Population from country
+WHERE Population > 100000
+LIMIT 100
+;
+
+SELECT COUNT(*) from country
+WHERE Population > 5000000
+;
+
+SELECT SUM(Population) AS "Soma de população" 
+FROM country
+WHERE Continent LIKE "Asia"
+;
+
+SELECT COUNT(GovernmentForm) 
+FROM country
+WHERE GovernmentForm LIKE "Republic"
+OR GovernmentForm LIKE "Constitutional Monarchy"
+;
+
+SELECT COUNT(GovernmentForm) AS Contagem, GovernmentForm FROM country
+GROUP BY GovernmentForm
+ORDER BY Contagem DESC
+LIMIT 1
+;
+
+SELECT AVG(Population) AS "Média População" , Continent 
+FROM country
+GROUP BY Continent
+;
+
+SELECT Name, IndepYear FROM country
+WHERE IndepYear IS NOT NULL
+ORDER BY IndepYear ASC
+LIMIT 10
+;
+
+SELECT AVG(LifeExpectancy), 
+LOWER(Continent) 
+FROM country
+GROUP BY Continent
+;
+
+SELECT Continent, SurfaceArea 
+FROM country
+ORDER BY SurfaceArea DESC
+LIMIT 3
+;
