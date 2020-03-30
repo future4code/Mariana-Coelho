@@ -1,0 +1,10 @@
+1. Tenho que clonar o projeto na maquina virtual, usando o comando com o ssh, criando a build  e dando npm start assim como na aula
+
+7. A unica diferença foi que não precisei instalar o python
+
+
+
+
+-  
+
+4. Algumas dificuldades com sintaxe da parte do tutorial em inglês, mas só.
