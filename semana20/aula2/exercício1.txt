@@ -1,0 +1,15 @@
+
+
+a. Não
+b. "Missing input"
+c.  Vai dar erro, falta o info
+d. "Missing input", pois falta email e senha.
+e. "Invalid password"
+f. "Correct user"
+g. statusCode no missing email
+h. 
+  if (!user.password || user.password.length < 6) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: "Invalid password" })
+    };
