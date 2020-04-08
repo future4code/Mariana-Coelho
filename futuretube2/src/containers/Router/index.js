@@ -1,34 +1,31 @@
-// import React from "react";
-// import { ConnectedRouter } from "connected-react-router";
-// import { Switch, Route } from "react-router-dom";
-// import Login from "../Login";
+import React from "react";
+import { ConnectedRouter } from "connected-react-router";
+import { Switch, Route } from "react-router-dom";
+import LoginPage from "../LoginPage";
 
-// export const routes = {
-//   root: '/',  
-// //   login: '/login/',
-// //   signUp: '/signup/',
-// //   address: '/address/',
-// //   editAddress: '/address/edit',
-// //   editProfile: '/profile/edit/',
-// };
 
-// function Router(props) {
-//   return (
-//     <ConnectedRouter>
-//       <Switch>
-//         <Route exact path={routes.root} component={Login} />
-//         {/* <Route exact path={routes.signUp} component={SignUp} />
-//         <Route exact path={routes.address} component={Address} />
-//         <Route exact path={routes.home} component={Home} />
-//         <Route exact path={routes.search} component={SearchPage} />
-//         <Route exact path={routes.restaurants} component={SelectedRestaurant} />
-//         <Route exact path={routes.cart} component={Cart} />
-//         <Route exact path={routes.profile} component={Profile} />
-//         <Route exact path={routes.editProfile} component={EditProfile} />
-//         <Route exact path={routes.editAddress} component={EditAddress} />         */}
-//       </Switch>
-//     </ConnectedRouter>
-//   );
-// }
+export const routes = {
+    root: '/',  
+    signUp: '/signup/',
+    upload: '/video/upload/',
+    home: '/home/' ,
+    deleteVideo: '/video/delete/',  
+    videoDetails: '/video/details/',
+  };
 
-// export default Router;
+function Router(props) {
+  return (
+    <ConnectedRouter>
+      <Switch>
+        <Route exact path={routes.root} component={LoginPage} />
+            {/* <Route exact path={routes.signUp} component={SignUpPage} />
+            <Route exact path={routes.upload} component={UploadVideoPage} />
+            <Route exact path={routes.home} component={HomePage} />
+            <Route exact path={routes.deleteVideo} component={DeleteVideoPage} />
+            <Route exact path={routes.videoDetails} component={VideoDetailsPage} /> */}
+      </Switch>
+    </ConnectedRouter>
+  );
+}
+
+export default Router;
