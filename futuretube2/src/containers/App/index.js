@@ -3,12 +3,7 @@ import { createBrowserHistory } from "history";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from "redux";
 import Router from "../Router";
-import {
-      MuiThemeProvider,
-      createGenerateClassName,
-      jssPreset,
-      CssBaseline
-    } from "@material-ui/core";
+import { MuiThemeProvider, createGenerateClassName, jssPreset, CssBaseline } from "@material-ui/core";
 import theme from '../../style/theme.js';
 import thunk from "redux-thunk";
 import { generateReducers } from "../../reducers";
@@ -23,9 +18,7 @@ const middlewares = [
         : f => f
     ];
 
-
 const store = createStore(generateReducers(history), compose(...middlewares));
-
 
 export const App = () => (
       <Provider store={store}>
@@ -34,7 +27,6 @@ export const App = () => (
                   <Router history={history}/>
             </MuiThemeProvider>
       </Provider>
-      
 );
 
 export default App;
