@@ -17,6 +17,6 @@ export class SignupUc {
     async execute(input: SignUpInput){
         const userId = v4()
         const hashPassword = await User.encryptPassword(input.password)
-        await this.database.SignUp(new User(userId, input.name, input.email, hashPassword, input.birthdate, input.photo))
+        await this.database.signUp(new User(userId, input.name, input.email, hashPassword, input.birthdate, input.photo))
     }
 }

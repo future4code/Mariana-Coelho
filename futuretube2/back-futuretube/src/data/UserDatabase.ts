@@ -3,7 +3,7 @@ import User from "../business/entities/User";
 import UserGateway from "../business/gateways/UserGateway";
 
 export default class UserDB extends MainDB implements UserGateway {
-    async SignUp(user: User){
+    async signUp(user: User){
         try{
             await this.connection.raw(`INSERT into users values(
                 '${user.getId()}',
@@ -18,4 +18,14 @@ export default class UserDB extends MainDB implements UserGateway {
             throw new Error(err.sqlMessage)
         }
     }
+    async getUserByEmail(email: string){
+        const result = await this.connection.raw(`
+            SELECT * from users 
+            WHERE email = "${email}"
+        `)
+        return result[0][0]
+    }
+
+    async login(){}
+
 }
