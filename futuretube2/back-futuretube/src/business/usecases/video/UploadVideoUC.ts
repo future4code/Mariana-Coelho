@@ -3,6 +3,7 @@ import Video from "../../entities/Video";
 import { v4 } from 'uuid';
 import * as jwt from 'jsonwebtoken';
 import User from "../../entities/User";
+import VideoGateway from "../../gateways/VideoGateway";
 
 interface UploadVideoUCInput {
     token: string
@@ -12,9 +13,8 @@ interface UploadVideoUCInput {
 }
 
 export default class UploadVideoUC {
-    constructor(private database: VideoDB) {}
+    constructor(private database: VideoGateway) {}
     
-
     async execute(input: UploadVideoUCInput){
 
         const id = v4()
@@ -22,11 +22,10 @@ export default class UploadVideoUC {
 
         await this.database.uploadVideo(new Video(
             id,
-            input.url,
-            input.description,
+            '1',
+            input.url,   
             input.title,
-            '1'
+            input.description,
         ))
     }
-
 }

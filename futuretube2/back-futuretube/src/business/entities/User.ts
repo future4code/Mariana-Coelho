@@ -16,7 +16,9 @@ export default class User {
     getEmail = () => this.email
     getPassword = () => this.password
     getbirthDate = () => this.birthdate
-    getProfilePicture = () => this.photo
+    getPhoto = () => this.photo
+
+
     static generateToken(id: string) {
         const jwtKey = process.env.JWT_KEY as string
         const token = jwt.sign(

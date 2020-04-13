@@ -1,14 +1,15 @@
 export default class Video {
     constructor(
         private id: string,
-        private title: string,
+        private userId: string,
         private url: string,
-        private description: string,
-        private userId: string
+        private title: string,
+        private description: string
     ) { }
+
     getId = () => this.id
+    getUserId = () => this.userId
+    getUrl = () => this.url
     getTitle = () => this.title
     getDescription = () => this.description
-    getUrl = () => this.url
-    getUserId = () => this.userId
 }
