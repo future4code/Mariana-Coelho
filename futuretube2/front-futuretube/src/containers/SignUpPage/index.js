@@ -12,8 +12,10 @@ function SignUpPage(props) {
             <LoginContainer>
                 <img src={logo}></img>
                     <ButtonDiv>
-                    <TextField id="standard-basic" label="aaaaaaa" />
-                    <TextField id="standard-basic" label="aaaa" />
+                    <TextField id="standard-basic" label="Nome" />
+                    <TextField id="standard-basic" label="E-mail" />
+                    <TextField id="standard-basic" label="Data de nascimento" />
+                    <TextField id="standard-basic" label="Foto" />
                     </ButtonDiv>
             </LoginContainer>
         </MainContainer>

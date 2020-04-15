@@ -10,4 +10,23 @@ export default class VideoDB extends MainDB implements VideoGateway {
             throw new Error(err.sqlMessage)
         }
     }
+
+    async getAllVideos(page: number = 0) {
+
+        try {
+            const offset = (page - 1) * 10
+       
+        const result = await this.connection.raw(`
+            SELECT id, title, url from videos
+            LIMIT 10
+            OFFSET ${offset}
+            ;
+        `)
+
+        return result[0]
+
+        } catch(err) {
+            throw new Error(err.sqlMessage)
+        }
+    }
 }

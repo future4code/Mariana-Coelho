@@ -18,6 +18,7 @@ export default class UserDB extends MainDB implements UserGateway {
             throw new Error(err.sqlMessage)
         }
     }
+    
     async getUserByEmail(email: string){
         const result = await this.connection.raw(`
             SELECT * from users 

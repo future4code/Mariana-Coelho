@@ -1,5 +1,4 @@
 import { v4 } from 'uuid';
-import UserGateway from '../../gateways/UserGateway';
 import User from '../../entities/User';
 import UserDB from '../../../data/UserDatabase';
 
