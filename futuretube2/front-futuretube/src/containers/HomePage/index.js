@@ -2,6 +2,14 @@ import React from 'react';
 import VideoCard from '../../components/VideoCard/index.js'
 import { getAllVideos } from '../../actions/videos.js';
 import { connect } from 'react-redux';
+import HeaderNav from '../../components/HeaderNav/index.js';
+import styled from 'styled-components';
+
+const HomeMainContainer = styled.div`
+display: flex;
+flex-direction: row;
+width: 100vw;
+`
 
 function HomePage(props) {
     React.useEffect(
@@ -11,8 +19,10 @@ function HomePage(props) {
 
     return (
         <div>
-            <VideoCard></VideoCard>
-            {props.allVideos.map(video => <VideoCard title={video.title}>{video.title}</VideoCard>)}
+            <HeaderNav></HeaderNav>
+                <HomeMainContainer>
+                    {props.allVideos.map(video => <VideoCard title={video.title}>{video.title}</VideoCard>)}
+                </HomeMainContainer>
         </div>
     )      
 }
