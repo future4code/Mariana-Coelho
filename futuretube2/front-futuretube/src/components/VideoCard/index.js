@@ -9,20 +9,24 @@ import Typography from '@material-ui/core/Typography';
 import styled from 'styled-components';
 
 const VideoCardItem = styled.div `
-width: 40%;
-border: 1px solid red;
+margin: 2px;
+width: 165px;
+background: #e1c8f380;
+border-radius: 8px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+padding: 5px;
 
 `
 
-const Video = styled.video`
-  max-width: 100%
-`
 
 function VideoCard(props) {
 
   return (
         <VideoCardItem>
-            {props.title}
+          {props.title}
+          <video src={props.src} width="165">
+          </video>
        </VideoCardItem>
   );
 }

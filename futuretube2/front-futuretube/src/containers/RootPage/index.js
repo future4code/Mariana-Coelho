@@ -7,7 +7,6 @@ import { routes } from '../Router/index.js';
 import { push } from 'connected-react-router';
 
 const MainContainer = styled.div`
-    padding: 10px;
     display: flex;
     justify-content: center;
 `
@@ -17,7 +16,6 @@ const LoginContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-content: space-around;
-    max-width: 20%;
 `
 
 const ButtonDiv = styled.div`
@@ -26,13 +24,12 @@ const ButtonDiv = styled.div`
     justify-content: space-between;
 
 `
-// COLOCAR NUM ARQUIVO SEPARADO OS ESTILOS
 
 function RootPage(props) {
     return (
         <MainContainer>
             <LoginContainer>
-                <img src={logo}></img>
+                <img width='300px' src={logo}></img>
                     <ButtonDiv>
                         <Button variant="contained" color="primary" onClick={props.goToLogin}>Login</Button>
                         <Button variant="contained" color="primary">Cadastro</Button>

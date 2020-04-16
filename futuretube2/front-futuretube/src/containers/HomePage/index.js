@@ -4,10 +4,12 @@ import { getAllVideos } from '../../actions/videos.js';
 import { connect } from 'react-redux';
 import HeaderNav from '../../components/HeaderNav/index.js';
 import styled from 'styled-components';
+import SimpleMenu from '../../components/Menu/index.js';
 
 const HomeMainContainer = styled.div`
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 width: 100vw;
 `
 
@@ -19,9 +21,9 @@ function HomePage(props) {
 
     return (
         <div>
-            <HeaderNav></HeaderNav>
+            <HeaderNav><SimpleMenu></SimpleMenu></HeaderNav>
                 <HomeMainContainer>
-                    {props.allVideos.map(video => <VideoCard title={video.title}>{video.title}</VideoCard>)}
+                    {props.allVideos.map(video => <VideoCard src={video.url} title={video.title}>{video.title}</VideoCard>)}
                 </HomeMainContainer>
         </div>
     )      
