@@ -11,7 +11,7 @@ export function HeaderNav(props) {
 
     return (
         <StyledDiv>          
-          <img src={smalllogo}></img>   
+          <img width='160' src={smalllogo}></img> 
         </StyledDiv>
     )
 }
